@@ -17,6 +17,15 @@
   <link href='https://css.gg/facebook.css' rel='stylesheet'>
   <link rel="stylesheet" href="../../css/main.css">
   <script src="../../js/main.js"></script>
+  <!-- Litter C Modal -->
+  <script>
+    $(document).ready(function () {
+      $("#litterCImg").click(function () {
+        $("#litterCModal").modal();
+      });
+    });
+  </script>
+  <!-- After onload page script -->
   <script>
     $(document).ready(function () {
       $("#myModal").modal('show');
@@ -40,7 +49,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Očekávaný Vrh "C" - 01.01.2021</h4>
+          <h4 class="modal-title">Vrh "C" - 03.01.2021</h4>
         </div>
         <div class="modal-body">
           <img src="../../images/litter_c.jpg" class="img-responsive">
@@ -156,18 +165,100 @@
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="../../images/litter_c.jpg" alt="Vrh 'C'" width="400" height="300">
+          <a data-toggle="modal" href="" id="litterCImg"><img src="../../images/litter_c.jpg" alt="Vrh 'C'" width="400"
+              height="300"></a>
           <p><strong>Vrh "C"</strong></p>
           <p>BONY DO JARDIM IMBUI a DANTE METHEORA</p>
           <p><a href="http://ingrus.net/brazter/en/testmating/3042/2370" target="blank">Rodokmen</a></p>
         </div>
       </div>
+      <!-- Modal window Litter C -->
+      <div id="litterCModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Vrh "C" - 03.01.2021</h4>
+            </div>
+            <div class="modal-body">
+              <!-- Litter C Slideshow-->
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                  <li data-target="#myCarousel" data-slide-to="4"></li>
+                  <li data-target="#myCarousel" data-slide-to="5"></li>
+                  <li data-target="#myCarousel" data-slide-to="6"></li>
+                  <li data-target="#myCarousel" data-slide-to="7"></li>
+                  <li data-target="#myCarousel" data-slide-to="8"></li>
+                  <li data-target="#myCarousel" data-slide-to="9"></li>
+                  <li data-target="#myCarousel" data-slide-to="10"></li>
+                  <li data-target="#myCarousel" data-slide-to="11"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="../../images/litterc/240121_1.jpg" style="width:100%;">
+                  </div>
+                  <div class="item">
+                    <img src="../../images/litterc/240121_2.jpg" style="width:100%;">
+                  </div>
+                  <div class="item">
+                    <img src="../../images/litterc/240121_3.jpg" style="width:100%;">
+                  </div>
+                  <div class="item">
+                    <img src="../../images/litterc/240121_4.jpg" style="width:100%;">
+                  </div>
+                  <div class="item">
+                    <img src="../../images/litterc/240121_5.jpg" style="width:100%;">
+                  </div>
+                  <div class="item">
+                    <img src="../../images/litterc/240121_6.jpg" style="width:100%;">
+                  </div>
+                  <div class="item">
+                    <img src="../../images/litterc/240121_7.jpg" style="width:100%;">
+                  </div>
+                  <div class="item">
+                    <img src="../../images/litterc/240121_8.jpg" style="width:100%;">
+                  </div>
+                  <div class="item">
+                    <img src="../../images/litterc/240121_9.jpg" style="width:100%;">
+                  </div>
+                  <div class="item">
+                    <img src="../../images/litterc/240121_10.jpg" style="width:100%;">
+                  </div>
+                  <div class="item">
+                    <img src="../../images/litterc/240121_11.jpg" style="width:100%;">
+                  </div>
+                  <div class="item">
+                    <img src="../../images/litterc/240121_12.jpg" style="width:100%;">
+                  </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <!-- End Litter C Slideshow -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End modal window Litter C -->
     </div><br>
   </div>
   <!-- Sekce Výstavy -->
   <div id="shows" class="container-fluid text-center">
     <h2 class="text-center">Výstavy</h2>
-    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -176,24 +267,21 @@
       </ol>
 
       <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
+      <div class="carousel-inner">
         <div class="item active">
-          <h4>09.09.2017 - Klubová výstava psů Mladá Boleslav<br><span>Naše fenka Bony získala nádherné ocenění -
-              Výborná 1, CAC, Klubový vítěz, BOB.</span><br><br>
-            <span><img src="../../images/CDS_090917.jpg"></span>
-          </h4>
+          <h4>09.09.2017 - Klubová výstava psů Mladá Boleslav<br>Naše fenka Bony získala nádherné ocenění -
+            Výborná 1, CAC, Klubový vítěz, BOB.</h4><br><br>
+          <img src="../../images/CDS_090917.jpg" style="width:100%;">
         </div>
         <div class="item">
-          <h4>20.5.2017 - Mezinárodní výstava psů Litoměřice<br><span>Naše fenka Bony získala nádherné ocenění - Výborná
-              1, CAJC, BOJ, BOB.</span><br><br>
-            <span><img src="../../images/IDS_200517.jpg"></span>
-          </h4>
+          <h4>20.5.2017 - Mezinárodní výstava psů Litoměřice<br>Naše fenka Bony získala nádherné ocenění - Výborná
+            1, CAJC, BOJ, BOB.</h4><br><br>
+          <img src="../../images/IDS_200517.jpg" style="width:100%;">
         </div>
         <div class="item">
-          <h4>1.- 2.4.2017 - DANUBE DuoCACIB Bratislava<br><span>Naše fenka Bony získala nádherné ocenění - 2x Výborná
-              1, CAJC, BOJ, BOB.</span><br><br>
-            <span><img src="../../images/bony_bratislava010417_bob.jpg"></span>
-          </h4>
+          <h4>1.- 2.4.2017 - DANUBE DuoCACIB Bratislava<br>Naše fenka Bony získala nádherné ocenění - 2x Výborná
+            1, CAJC, BOJ, BOB.</h4><br><br>
+          <img src="../../images/bony_bratislava010417_bob.jpg" style="width:100%;">
         </div>
       </div>
 

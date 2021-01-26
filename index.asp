@@ -17,6 +17,22 @@
   <link href='https://css.gg/facebook.css' rel='stylesheet'>
   <link rel="stylesheet" href="../../css/main.css">
   <script src="../../js/main.js"></script>
+  <!-- Litter A Modal -->
+  <script>
+    $(document).ready(function () {
+      $("#litterAImg").click(function () {
+        $("#litterAModal").modal();
+      });
+    });
+  </script>
+  <!-- Litter B Modal -->
+  <script>
+    $(document).ready(function () {
+      $("#litterBImg").click(function () {
+        $("#litterBModal").modal();
+      });
+    });
+  </script>
   <!-- Litter C Modal -->
   <script>
     $(document).ready(function () {
@@ -25,10 +41,18 @@
       });
     });
   </script>
-  <!-- After onload page script -->
+  <!-- After onload page script (news) -->
   <script>
     $(document).ready(function () {
       $("#myModal").modal('show');
+    });
+  </script>
+  <!-- Wrote about us Modal -->
+  <script>
+    $(document).ready(function () {
+      $("#wroteAboutUs").click(function () {
+        $("#wroteAboutUsModal").modal();
+      });
     });
   </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -44,19 +68,9 @@
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
   <!-- Sekce Novinky -->
-  <div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Vrh "C" - 03.01.2021</h4>
-        </div>
-        <div class="modal-body">
-          <img src="../../images/litter_c.jpg" class="img-responsive">
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- Modal window News -->
+  <!-- #include virtual ="/modalNews.asp" -->
+  <!-- End modal window News -->
   <!-- Sekce Menu -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -149,20 +163,28 @@
     <div class="row text-center slideanim">
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="../../images/litter_a.jpg" alt="Vrh 'A'" width="400" height="300">
+          <a data-toggle="modal" href="" id="litterAImg"><img src="../../images/litter_a.jpg" alt="Vrh 'A'" width="400"
+              height="300"></a>
           <p><strong>Vrh "A"</strong></p>
           <p>UMA HIGIENOPOLIS a BAIXINHO BRAVO DA PEDRA FILOSOFAL</p>
           <p><a href="http://ingrus.net/brazter/en/testmating/1906/960" target="blank">Rodokmen</a></p>
         </div>
       </div>
+      <!-- Modal window Litter A -->
+      <!-- #include virtual ="/modalPuppiesA.asp" -->
+      <!-- End modal window Litter A -->
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="../../images/litter_b_6_weeks_monte.jpg" alt="Vrh 'B'" width="400" height="300">
+          <a data-toggle="modal" href="" id="litterBImg"><img src="../../images/litter_b_6_weeks_monte.jpg"
+              alt="Vrh 'B'" width="400" height="300"></a>
           <p><strong>Vrh "B"</strong></p>
           <p>BONY DO JARDIM IMBUI a MONTE AZUL DO CHAPUTEPEK</p>
           <p><a href="http://ingrus.net/brazter/en/testmating/1741/2370" target="blank">Rodokmen</a></p>
         </div>
       </div>
+      <!-- Modal window Litter B -->
+      <!-- #include virtual ="/modalPuppiesB.asp" -->
+      <!-- End modal window Litter B -->
       <div class="col-sm-4">
         <div class="thumbnail">
           <a data-toggle="modal" href="" id="litterCImg"><img src="../../images/litter_c.jpg" alt="Vrh 'C'" width="400"
@@ -270,7 +292,8 @@
       <div class="col-sm-3 col-xs-12">
         <div class="panel panel-default text-center">
           <div class="panel-body">
-            <img src="../../images/clanek-fauna(1).jpg" class="img-responsive">
+            <a data-toggle="modal" href="" id="wroteAboutUs"><img src="../../images/clanek-fauna(1).jpg"
+                class="img-responsive"></a>
           </div>
         </div>
       </div>
@@ -296,6 +319,9 @@
         </div>
       </div>
     </div>
+    <!-- Modal window Wrote about us -->
+    <!-- #include virtual ="/modalWroteAboutUs.asp" -->
+    <!-- End modal window Wrote about us -->
   </div>
 
   <!-- Sekce kontakt -->

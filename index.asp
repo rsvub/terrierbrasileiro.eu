@@ -15,6 +15,7 @@
   <script type="text/javascript"
     src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <link href='https://css.gg/facebook.css' rel='stylesheet'>
+  <link href='https://css.gg/youtube.css' rel='stylesheet'>
   <link rel="stylesheet" href="../../css/main.css">
   <script src="../../js/main.js"></script>
   <!-- Litter A Modal -->
@@ -333,7 +334,8 @@
         <p><span class="glyphicon glyphicon-map-marker"></span> Nenačovice, CZ</p>
         <p><span class="glyphicon glyphicon-phone"></span> +420 605149912</p>
         <p><span class="glyphicon glyphicon-envelope"></span> info@terrierbrasileiro.eu</p>
-        <p><a href="https://www.facebook.com/kennel.beloarvoredo/" target="blank" class="gg-facebook"></a></p>
+        <p><a href="https://www.facebook.com/kennel.beloarvoredo/" target="blank" class="gg-facebook"></a>&nbsp;
+        <a href="https://www.youtube.com/user/BeloArvoredo/featured" target="blank" class="gg-youtube"></a></p>
       </div>
       <div class="col-sm-7 slideanim">
         <div class="row">
